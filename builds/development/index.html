@@ -5,9 +5,20 @@
   <title>day #</title>
   <link rel="stylesheet" href="css/myStyle.css">
   <link rel="stylesheet" href="css/anotherstyle.css">
+  <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/lib/angular/app.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
 
+<div ng-controller="RandomController">
+  <div ng-repeat="num in randomArray track by $index"
+    ng-class="{areaBlack:num > 15, areaWhite: num <=15}"
+  >
+<!--
+https://docs.angularjs.org/error/ngRepeat/dupes?p0=num%20in%20randomArray&p1=number:13
+ -->
+  </div>
+</div>
 
 </body>
 </html>

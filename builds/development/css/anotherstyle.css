@@ -33,4 +33,18 @@ pre.center{
     width: 60%;
     border: #F2773F solid;
 }
-
+.areaWhite{
+    display: inline-block;
+    width: 24%;
+    height: 200px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+}
+.areaBlack{
+    display: inline-block;
+    width: 24%;
+    height: 200px;
+    border: 4px solid black;
+    margin: 0 auto;
+    background: #000;
+}
